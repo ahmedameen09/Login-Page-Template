@@ -16,7 +16,7 @@ def login():
 # General Configuration
 loginW = Tk()
 loginW.title("MRU Student System")
-loginW.iconbitmap(r'C:\Users\14b007\Desktop\MRU Database Project\Logo Design\iconem.ico')
+loginW.iconbitmap(r'icon.ico')
 loginW.option_add("*tearOff", False)                            # for remove dashed line from ui\ux
 loginW.geometry("1000x650")                                     # for default size of window
 loginW.resizable(False, FALSE)                                  # for resizing of window
@@ -34,11 +34,11 @@ loginframe.grid(row=0, column=1, padx=0, pady=(50,10), sticky="nsew", rowspan=3)
 loginframe.columnconfigure(index=0, weight=1)
 
 # setting the theme
-loginW.call("source", r"C:\Users\14b007\Desktop\MRU Database Project\Azure-ttk-theme-main\azure.tcl")
+loginW.call("source", r"Azure-ttk-theme-main\azure.tcl")
 loginW.call("set_theme", "dark")
 
 # setting Logo
-logo = Image.open(r"C:\Users\14b007\Desktop\MRU Database Project\Logo Design\Removal-547.png")  # open image
+logo = Image.open(r"Logo.png")  # open image
 r_logo = logo.resize((150,139), Image.ANTIALIAS)               # resizing image
 F_logo = ImageTk.PhotoImage(r_logo)                            # make image photo
 logolbl = Label(image=F_logo)                                  # make image as label
